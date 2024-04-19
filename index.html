@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToDo List</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <fieldset>
+    <legend>ToDo List</legend>
+    <label for="task">Task: <input type="text" id="task" placeholder="Enter task"></label>
+    <label for="time">Time: <input type="time" id="time"></label>
+    <label for="date">Date: <input type="date" id="date"></label>
+    <button class="submit" onclick="addTask()">sumbit</button>
+  </fieldset>
+
+  <h2>Pending</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Task</th>
+        <th>Time</th>
+        <th>Date</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody id="list"></tbody>
+  </table>
+
+  <h2>Completed</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Task</th>
+        <th>Time</th>
+        <th>Date</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody id="completed"></tbody>
+  </table>
+
+  <script src="index.js"></script>
+</body>
+</html>
